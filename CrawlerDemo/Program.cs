@@ -22,7 +22,8 @@ namespace CrawlerDemo
         private static async Task startCrawlerasync()
         {
             //var url = "http://www.automobile.tn/neuf/bmw.3/";
-            //var url = "https://www.magazineluiza.com.br/kit-barebone-vinik-vb200-gabinete-mouse-teclado-caixa-som-fonte-200w-preto/p/kf57h57e96/in/gbpc/";
+            //var url = "https://www.magazineluiza.com.br/kit-barebone-vinik-vb200-gabinete-mouse-teclado-caixa-som-fonte-200w-preto/p/kf57h57e96/in/gbpc/";7
+            Console.WriteLine("Digite a URL: (No momento, o código só funciona para Magazine Luiza, mas ele baixa todas as páginas que tentar)");
            var url = Console.ReadLine();
 
             var httpClient = new HttpClient();
