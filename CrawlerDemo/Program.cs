@@ -57,11 +57,6 @@ namespace CrawlerDemo
                 car.ImageUrl = ""; // div.Descendants("img").FirstOrDefault().ChildAttributes("src").FirstOrDefault().Value;
                 cars.Add(car);              
             }
-            // Connection string 
-            //string MyConnection = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Database=crawlerdemo;User Id=root;Password=";
-            ////string MyConnection = "datasource=localhost;username=root;password=";  
-            //OdbcConnection con = new OdbcConnection(MyConnection);
-            //con.Open();
 
             try
             {
@@ -70,15 +65,7 @@ namespace CrawlerDemo
                 {
                     for(int i = 0; i < count; i++)
                     {
-                        //string query = "insert into carinfor(Model,Price,Link,ImageUrl) value(?,?,?,?);";
-                        //OdbcCommand cmd = new OdbcCommand(query, con);
-                        //cmd.Parameters.Add("?Model", OdbcType.VarChar).Value = cars[i].Model;
-                        //cmd.Parameters.Add("?Price", OdbcType.VarChar).Value = cars[i].Price;
-                        //cmd.Parameters.Add("?Link", OdbcType.VarChar).Value = cars[i].Link;
-                        //cmd.Parameters.Add("?ImageUrl", OdbcType.VarChar).Value = cars[i].ImageUrl;
-                        //OdbcDataReader reader = cmd.ExecuteReader();
-                        //reader.Close();
-                        //Console.WriteLine(cars[i].Model);
+
                         Console.WriteLine(cars[i].Price);
                         //Console.WriteLine(cars[i].Link);
                         //Console.WriteLine(cars[i].ImageUrl);
